@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 
 import { FaHome, FaSignInAlt, FaUserAlt } from 'react-icons/fa';
 
-
 const Header = () => {
+
   return (
       <HeaderStyled>
-        <Link to='/'><FaHome size={24}/></Link>
-        <Link to='/'><FaUserAlt size={24}/></Link>
+        <Link to='/sdfdfdf'><FaHome size={24}/></Link>
+        <Link to='/dfdf'><FaUserAlt size={24}/></Link>
         <Link to='/'><FaSignInAlt size={24}/></Link>
       </HeaderStyled>
   );
