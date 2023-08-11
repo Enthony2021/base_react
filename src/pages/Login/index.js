@@ -1,6 +1,6 @@
 import React from 'react';
-import LoginStyled from './styled';
 
+import LoginStyled from './styled';
 import { Container } from '../../styles/GlobalStyles';
 
 const Login = () => {
