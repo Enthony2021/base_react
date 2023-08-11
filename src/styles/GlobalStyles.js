@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components';
 import * as colors from '../config/colors';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default createGlobalStyle`
   * {
@@ -13,6 +14,16 @@ export default createGlobalStyle`
     font-family: sans-serif;
     background: ${colors.primaryDarkColor};
     color: ${colors.primaryColor};
+
+    .Toastify .Toastify__toast-container .Toastify__toast--success {
+      background: ${colors.sucessColor};
+      color: #fff;
+    }
+
+    .Toastify .Toastify__toast-container .Toastify__toast--error {
+      background: ${colors.errorColor};
+      color: #fff;
+    }
   }
 
   html, body, #root {
@@ -37,6 +48,8 @@ export default createGlobalStyle`
   ul {
     list-style: none;
   }
+
+
 `;
 
 export const Container = styled.section`

@@ -1,7 +1,8 @@
 import React from 'react';
-import { BrowserRouter} from 'react-router-dom';
-import history from './services/history';
+import { BrowserRouter } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 
+import history from './services/history';
 import Rotas from './Routes';
 
 // Styles
@@ -12,10 +13,11 @@ import Header from './components/Header';
 
 function App() {
   return (
-    <BrowserRouter history={history} >
+    <BrowserRouter history={history}>
+      <Header />
+      <Rotas />
       <GlobalStyles />
-        <Header />
-        <Rotas />
+      <ToastContainer autoClose={3000} className="toast-container" />
     </BrowserRouter>
   );
 }
