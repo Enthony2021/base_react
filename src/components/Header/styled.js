@@ -14,6 +14,10 @@ const HeaderStyled = styled.nav`
       margin: 0 10px 0;
       font-weight: bold;
     }
+
+    p {
+      color: #fff;
+    }
 `;
 
 export default HeaderStyled;
