@@ -10,7 +10,7 @@ const Login = () => {
   const dispatch = useDispatch();
 
   const handleButton = () => {
-    dispatch(exampleActions.clicaBotao());
+    dispatch(exampleActions.clicaBotaoRequest());
   }
 
   return (
